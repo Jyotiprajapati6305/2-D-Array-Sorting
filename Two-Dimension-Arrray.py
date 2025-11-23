@@ -194,14 +194,17 @@ class SortVisualizer:
 # Example usage
 if __name__ == "__main__":
     # Create a larger 2D array (6x6)
-    array_2d = [
-        [89, 34, 56, 12, 78, 45],
-        [23, 67, 91, 15, 38, 72],
-        [29, 84, 51, 66, 41, 95],
-        [18, 63, 27, 80, 33, 59],
-        [42, 74, 19, 86, 53, 31],
-        [68, 25, 92, 47, 14, 76]
-    ]
+    # Generate random 6x6 array with numbers 1–99
+    array_2d = np.random.randint(1, 100, (6, 6))
+
+    # array_2d = [
+    #     [89, 34, 56, 12, 78, 45],
+    #     [23, 67, 91, 15, 38, 72],
+    #     [29, 84, 51, 66, 41, 95],
+    #     [18, 63, 27, 80, 33, 59],
+    #     [42, 74, 19, 86, 53, 31],
+    #     [68, 25, 92, 47, 14, 76]
+    # ]
     
     print("Original 2D Array (6x6):")
     print(np.array(array_2d))
